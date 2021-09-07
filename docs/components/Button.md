@@ -1,4 +1,5 @@
 # Button 按钮
+
 ## type
 在原有的type基础上，额外扩展了几个值。
 <button-type />

@@ -6,6 +6,7 @@ module.exports = {
         title: '组件',
         children: [
           '/components/Button',
+          '/components/Descriptions',
         ]
       },
       'FAQ',
