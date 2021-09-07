@@ -4,7 +4,7 @@ import erpack from 'erpack'
 // import 'erpack/dist/erpack.css'
 
 export default {
-  install(Vue) {
+  install (Vue) {
     Vue.use(antdv)
     Vue.use(erpack)
   }
