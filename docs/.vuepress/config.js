@@ -7,6 +7,7 @@ module.exports = {
         children: [
           '/components/Button',
           '/components/Descriptions',
+          '/components/Table',
         ]
       },
       'FAQ',
