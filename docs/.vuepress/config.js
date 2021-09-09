@@ -1,4 +1,5 @@
 module.exports = {
+  base: '/erpack-docs/',
   themeConfig: {
     sidebar: [
       '/',
