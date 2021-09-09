@@ -4,8 +4,9 @@ export default {
     return (
       <div>
         <erp-button type="primary">primary</erp-button>
+        <erp-button type="secondary">secondary</erp-button>
         <erp-button type="success">success</erp-button>
-        <erp-button type="danger">danger</erp-button>
+        <erp-button type="warning">warning</erp-button>
       </div>
     );
   },
