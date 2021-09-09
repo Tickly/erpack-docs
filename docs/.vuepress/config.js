@@ -3,6 +3,7 @@ module.exports = {
   themeConfig: {
     sidebar: [
       '/',
+      'Model',
       {
         title: '组件',
         children: [

@@ -9,3 +9,5 @@
 ## items
 
 <descriptions-basic />
+
+<<< @/docs/.vuepress/components/descriptions/basic.vue
