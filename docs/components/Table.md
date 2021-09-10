@@ -1,5 +1,14 @@
 # Table 表格
 
+## 基本用法
+<table-basic-usage />
+<<< @/docs/.vuepress/components/table/basic-usage.vue
+
+## 单元格自动省略
+<table-ellipsis-column />
+<<< @/docs/.vuepress/components/table/ellipsis-column.vue
+
+
 ## columns
 对列的配置进行了一层封装，更加的方便使用。
 
