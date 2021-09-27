@@ -12,7 +12,13 @@ module.exports = {
           '/components/Table',
         ]
       },
-      'STYLE-GUIDE',
+      {
+        title:'风格指南',
+        children:[
+          '/style-guide/CRUD-common',
+          '/style-guide/business-component',
+        ]
+      },
       'FAQ',
     ]
   }
