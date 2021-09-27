@@ -12,6 +12,7 @@ module.exports = {
           '/components/Table',
         ]
       },
+      'STYLE-GUIDE',
       'FAQ',
     ]
   }
