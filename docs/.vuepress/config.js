@@ -9,12 +9,18 @@ module.exports = {
         children: [
           '/components/Button',
           '/components/Descriptions',
-          '/components/Table',
+          {
+            title: 'Table 表格',
+            children: [
+              '/components/table/column-type',
+              '/components/table/demo',
+            ]
+          }
         ]
       },
       {
-        title:'风格指南',
-        children:[
+        title: '风格指南',
+        children: [
           '/style-guide/CRUD-common',
           '/style-guide/business-component',
         ]

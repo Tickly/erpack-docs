@@ -1,7 +1,10 @@
-# 业务组件
+# 封装业务组件
+
+::: tip 强烈推荐
+对业务组件进行封装。
+:::
 
 拿下拉组件来举例，可能有点啰嗦。
-
 
 比如我们用户管理模块，在`查询页面`，有角色，部门的查询项，都是下拉组件，下拉选项都是从接口获取的数据。
 
@@ -58,6 +61,7 @@ export default {
 这时候你开始考虑到要封装组件了，把这两个下拉封装成组件，页面上直接拿来用。
 
 ---
+
 于是，你可能会新建一个`RoleSelect.vue`的文件，然后写出如下代码。
 
 ```vue
@@ -204,10 +208,71 @@ export default {
 
 然后`新增页面`里，也无需去构造下拉选项这些与业务流程无关的逻辑了，组件内部自己实现了，拿来就用。
 
-
 ---
 
-到这一步的时候，也许你会发现，封装的这两个下拉组件，逻辑几乎一毛一样，区别可能就在获取数据的接口不同。   
+到这一步的时候，也许你会发现，封装的这两个下拉组件，逻辑几乎一毛一样，区别可能就在获取数据的接口不同。  
 那有没有什么办法，再封装一下呢？如果以后还有类似的组件需要封装，能不能更加快速的就写出来一个了呢？
 
->编了半天发现编不出来一个原因为什么一定要用渲染函数。
+当然是可以的。
+
+我们可以这么想一下，项目里肯定会有许多的下拉组件，大部分都是从接口获取的下拉选项数据，不同下拉组件的区别基本上就是请求接口不同而已。
+
+那么我们可以将`从接口获取数据`这一行为写成一个方法，然后后续组件通过使用`mixin`的方式，再重写`从接口获取数据`这一方法即可构造一个新的业务组件。
+
+`MySelect.vue`
+
+```vue
+<template>
+  <a-select :value="value" @change="handleChange">
+    <a-select-option v-for="item in options" :value="item.value">
+      {{ item.text }}
+    </a-select-option>
+  </a-select>
+</template>
+<script>
+export default {
+  name: "MySelect",
+  model: {
+    prop: "value",
+    event: "change",
+  },
+  props: {
+    value: String,
+  },
+  data() {
+    return {
+      options: [],
+    };
+  },
+  created() {
+    this.fetch();
+  },
+  methods: {
+    async fetch() {
+      throw new Error("请重写获取数据方法");
+      // this.options = await ajax("xxx");
+    },
+    handleChange(e) {
+      this.$emit("change", e);
+    },
+  },
+};
+</script>
+```
+
+然后我们重写`角色下拉组件`，之前是用的.vue 文件，现在就不需要啦，因为模板不需要变动，所以直接新建`RoleSelect.js`
+
+```js
+import MySelect from "./MySelect.vue";
+export default {
+  name: "RoleSelect",
+  mixins: [MySelect],
+  methods: {
+    async fetch() {
+      this.options = await ajax("xxx");
+    },
+  },
+};
+```
+
+
