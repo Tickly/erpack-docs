@@ -51,9 +51,11 @@ const columns = [
 ```
 
 ## DateColumn 时间列
+
 一般时间都需要格式化展示，相比于写`customRender`，还是直接指定`format`更方便。
 
 使用[moment.js](https://momentjs.com/docs/#/displaying/format/)作为时间格式化工具。
+
 ```js
 const columns = [
   {
@@ -67,6 +69,7 @@ const columns = [
 ```
 
 ## NumberColumn 数字列
+
 数字的展示，最常见的就是千分位分割了，不然数值比较大的时候，很难一眼看个大概。
 
 使用[numeral.js](http://numeraljs.com/#format)作为数字格式化工具。
@@ -83,7 +86,41 @@ const columns = [
 ];
 ```
 
+## TagColumn 标签列
+
+```js
+const columns = [
+  {
+    type: "tag",
+    dataIndex: "tags",
+    // 如果字段的值是字符串，或者字符串数组，那么无需设置tags
+    // 如果字段的值是对象，或者对象数组，那么需要设置tags
+    // 传入字符串，表示属性名称，会把对象的该属性显示出来
+    text: "label",
+    // 传入函数
+    text: (tag) => tag.label,
+    // 标签的颜色
+    // 传入字符串，所有的标签将使用此颜色
+    // 传入函数，可以根据当前标签的文本，返回不同的颜色。
+    color: "red",
+    color: (tag) => {
+      return tag.length > 5 ? "red" : "blue";
+    },
+  },
+];
+```
+
+### 示例
+
+<table-tag-column />
+<<< @/docs/.vuepress/components/table/tag-column.vue
+
 ## ActionColumn 操作列
+
+为了整体交互统一，提供了一个操作列。（效果见顶部）
+
+你总不想有的页面表格操作是按钮，有的页面表格操作是文本按钮，这样就很奇怪。
+
 
 ```js
 const columns = [

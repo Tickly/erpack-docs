@@ -10,6 +10,12 @@ export default {
         { type: 'date', dataIndex: 'updated_at', title: '更新时间', format: 'YYYY-MM-DD' },
         { type: 'number', dataIndex: 'balance', title: '微信余额' },
         {
+          type: 'tag',
+          dataIndex: 'tags',
+          title: '标签',
+          color: tag => tag === 'loser' ? 'volcano' : tag.length > 5 ? 'geekblue' : 'green'
+        },
+        {
           type: 'action', buttons: [
             {
               text: '编辑',
@@ -29,8 +35,20 @@ export default {
         }
       ],
       source: [
-        { name: '张三', created_at: Date.now(), updated_at: Date.now(), balance: 12345, },
-        { name: '李四', created_at: Date.now(), updated_at: Date.now(), balance: 1.03 },
+        {
+          name: '张三',
+          created_at: Date.now(),
+          updated_at: Date.now(),
+          balance: 12345,
+          tags: ['nice', 'developer'],
+        },
+        {
+          name: '李四',
+          created_at: Date.now(),
+          updated_at: Date.now(),
+          balance: 1.03,
+          tags: ['loser'],
+        },
       ]
     }
   },
