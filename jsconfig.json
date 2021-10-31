@@ -1,4 +1,7 @@
 {
+  "vueCompilerOptions": {
+    "experimentalCompatMode": 2
+  },
   "include": [
     "./docs/.vuepress/components/**/*"
   ]

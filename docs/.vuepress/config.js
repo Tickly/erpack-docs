@@ -5,6 +5,13 @@ module.exports = {
       '/',
       'Model',
       {
+        title: '布局组件',
+        children: [
+          '/layout/grid',
+          '/layout/flex',
+        ]
+      },
+      {
         title: '组件',
         children: [
           '/components/Button',
@@ -15,7 +22,13 @@ module.exports = {
               '/components/table/column-type',
               '/components/table/demo',
             ]
-          }
+          },
+          {
+            title: 'Form 表单',
+            children: [
+              '/components/form/',
+            ]
+          },
         ]
       },
       {
