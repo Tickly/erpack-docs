@@ -1,8 +1,10 @@
 {
-  "vueCompilerOptions": {
-    "experimentalCompatMode": 2
+  "compilerOptions": {
+    "baseUrl": "./",
+    "module": "esnext",
+    "target": "ES2015",
   },
   "include": [
-    "./docs/.vuepress/components/**/*"
+    "docs/.vuepress/components/**/*.vue"
   ]
 }
