@@ -5,7 +5,7 @@ module.exports = {
       '/',
       {
         title: '对比',
-        children:[
+        children: [
           '/diff/antd',
           '/diff/erpack'
         ]
@@ -14,6 +14,8 @@ module.exports = {
         title: '模型',
         children: [
           '/Model',
+          '/model/definition',
+          '/model/property/',
         ]
       },
       {
@@ -52,5 +54,8 @@ module.exports = {
       },
       'FAQ',
     ]
-  }
+  },
+  plugins: [
+    require('./plugins/my-plugin')
+  ]
 }

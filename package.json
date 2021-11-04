@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
+    "jsdoc": "^3.6.7",
     "less": "4.1.1",
     "less-loader": "7.3.0",
     "vuepress": "^1.8.2"
