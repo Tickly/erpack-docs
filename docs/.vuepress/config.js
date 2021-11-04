@@ -3,7 +3,19 @@ module.exports = {
   themeConfig: {
     sidebar: [
       '/',
-      'Model',
+      {
+        title: '对比',
+        children:[
+          '/diff/antd',
+          '/diff/erpack'
+        ]
+      },
+      {
+        title: '模型',
+        children: [
+          '/Model',
+        ]
+      },
       {
         title: '布局组件',
         children: [
