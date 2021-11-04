@@ -15,28 +15,25 @@ export default {
     const { form } = this
 
     return <div>
-      <a-descriptions title="你好" bordered>
-        <a-descriptions-item label="UserName">{form.username}</a-descriptions-item>
-        <a-descriptions-item label="Telephone">{form.telephone}</a-descriptions-item>
-        <a-descriptions-item label="Live">{form.live}</a-descriptions-item>
-        <a-descriptions-item label="Remark">{form.remark}</a-descriptions-item>
-        <a-descriptions-item label="Address">{form.address}</a-descriptions-item>
+      <a-descriptions bordered>
+        <a-descriptions-item span="3" label="用户名">{form.username}</a-descriptions-item>
+        <a-descriptions-item label="电话号码">{form.telephone}</a-descriptions-item>
+        <a-descriptions-item label="居住地">{form.live}</a-descriptions-item>
+        <a-descriptions-item label="简介">{form.remark}</a-descriptions-item>
+        <a-descriptions-item label="详细地址">{form.address}</a-descriptions-item>
       </a-descriptions>
-
+      <br />
       <erp-descriptions
-        title="你好"
         bordered
         form={form}
         items={[
-          { prop: 'username', label: 'UserName' },
-          { prop: 'telephone', label: 'Telephone' },
-          { prop: 'live', label: 'Live' },
-          { prop: 'remark', label: 'Remark' },
-          { prop: 'address', label: 'Address' },
+          { prop: 'username', label: '用户名', span: 3 },
+          { prop: 'telephone', label: '电话号码' },
+          { prop: 'live', label: '居住地' },
+          { prop: 'remark', label: '简介' },
+          { prop: 'address', label: '详细地址' },
         ]}
       />
-
-
     </div>
   }
 }
