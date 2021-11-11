@@ -117,22 +117,9 @@ const columns = [
 
 ## ActionColumn 操作列
 
-为了整体交互统一，提供了一个操作列。（效果见顶部）
-
-你总不想有的页面表格操作是按钮，有的页面表格操作是文本按钮，这样就很奇怪。
+> 参考菜单 操作列
 
 
-```js
-const columns = [
-  {
-    type: "action",
-    buttons: [
-      { text: "编辑", click() {} },
-      { text: "删除", click() {} },
-    ],
-  },
-];
-```
 
 ## 扩展自定义列类型
 

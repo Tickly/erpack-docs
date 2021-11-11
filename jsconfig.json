@@ -1,10 +1,11 @@
 {
   "compilerOptions": {
     "baseUrl": "./",
-    "module": "esnext",
+    "module": "CommonJS",
     "target": "ES2015",
   },
   "include": [
-    "docs/.vuepress/components/**/*.vue"
+    "docs/**/*.vue",
+    "docs/**/*.js"
   ]
 }

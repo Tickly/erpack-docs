@@ -34,6 +34,7 @@ module.exports = {
             title: 'Table 表格',
             children: [
               '/components/table/column-type',
+              '/components/table/action-column',
               '/components/table/demo',
             ]
           },
