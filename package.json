@@ -4,14 +4,15 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "jsdoc": "^3.6.7",
     "less": "4.1.1",
     "less-loader": "7.3.0",
-    "vuepress": "^1.8.2"
+    "vuepress": "^1.8.2",
+    "webpack": "4.8.1",
+    "webpack-dev-server": "3.5.1"
   },
   "scripts": {
     "deploy": "bash deploy.sh",
-    "docs:dev": "vuepress dev docs",
+    "docs:dev": "vuepress dev docs --temp .temp",
     "docs:build": "vuepress build docs"
   },
   "dependencies": {

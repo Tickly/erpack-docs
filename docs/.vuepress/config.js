@@ -26,19 +26,30 @@ module.exports = {
         ]
       },
       {
+        title: 'Table 表格',
+        path: '/components/table',
+        children: [
+          {
+            title: '表格列',
+            children: [
+              '/components/table/column-type',
+              '/components/table/columns/text',
+              '/components/table/columns/serial',
+              '/components/table/columns/date',
+              '/components/table/columns/number',
+              '/components/table/columns/tag',
+              '/components/table/columns/action',
+            ]
+          },
+          '/components/table/demo',
+        ]
+      },
+      {
         title: '组件',
         children: [
           '/components/Button',
           '/components/ActionButtons',
           '/components/Descriptions',
-          {
-            title: 'Table 表格',
-            children: [
-              '/components/table/column-type',
-              '/components/table/action-column',
-              '/components/table/demo',
-            ]
-          },
           {
             title: 'Form 表单',
             children: [
@@ -52,6 +63,7 @@ module.exports = {
         children: [
           '/style-guide/CRUD-common',
           '/style-guide/business-component',
+          '/style-guide/extend-modal',
         ]
       },
       'FAQ',

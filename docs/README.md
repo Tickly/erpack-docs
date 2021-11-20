@@ -1,6 +1,8 @@
 # erpack
 
-一个基于`ant-design-vue`开发的组件库。
+一个基于`ant-design-vue@1.x` `vue@2.x`进行二次封装的组件库，使之更加好用。
+
+
 
 ## 安装
 
