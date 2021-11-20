@@ -32,6 +32,7 @@ export default {
         {
           text: "编辑",
           visible: () => index === 1,
+          icon: 'edit',
         },
         {
           text: "删除",

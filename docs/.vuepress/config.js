@@ -64,6 +64,8 @@ module.exports = {
           '/style-guide/CRUD-common',
           '/style-guide/business-component',
           '/style-guide/extend-modal',
+          '/style-guide/page',
+          '/style-guide/list-page',
         ]
       },
       'FAQ',
