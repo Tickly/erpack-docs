@@ -27,6 +27,7 @@ export default {
   },
   render () {
     return <erp-descriptions
+      label-width="120px"
       form={this.user}
       items={[
         { prop: 'username', span: 3 },
