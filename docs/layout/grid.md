@@ -14,3 +14,9 @@
 | ------- |
 | rowSpan |
 | colSpan |
+
+
+## 示例
+
+<grid-demo-1 />
+<<< @/docs/.vuepress/components/grid/demo-1.vue
