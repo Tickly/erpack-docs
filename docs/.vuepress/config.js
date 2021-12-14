@@ -33,7 +33,7 @@ module.exports = {
             title: '表格列',
             children: [
               '/components/table/column-type',
-              '/components/table/columns/text',
+              '/components/table/columns/string',
               '/components/table/columns/serial',
               '/components/table/columns/date',
               '/components/table/columns/number',
@@ -41,7 +41,14 @@ module.exports = {
               '/components/table/columns/action',
             ]
           },
+          '/components/table/use-table-columns',
           '/components/table/demo',
+        ]
+      },
+      {
+        title: 'Form 表单',
+        children: [
+          '/components/form/',
         ]
       },
       {
@@ -50,12 +57,6 @@ module.exports = {
           '/components/Button',
           '/components/ActionButtons',
           '/components/Descriptions',
-          {
-            title: 'Form 表单',
-            children: [
-              '/components/form/',
-            ]
-          },
         ]
       },
       {
