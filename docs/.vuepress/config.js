@@ -54,6 +54,7 @@ module.exports = {
       {
         title: '组件',
         children: [
+          '/components/text/',
           '/components/Button',
           '/components/ActionButtons',
           '/components/Descriptions',
