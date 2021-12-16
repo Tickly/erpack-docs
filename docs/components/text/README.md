@@ -5,6 +5,7 @@
 下面是一些示例
 
 <text-demo />
+<<< @/docs/.vuepress/components/text/demo.vue
 
 ## Props
 
