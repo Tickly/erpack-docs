@@ -1,6 +1,8 @@
 # Text 文本组件
 
 ## Demo
+::: doc text/demo.vue
+:::
 
 下面是一些示例
 
@@ -9,11 +11,11 @@
 
 ## Props
 
-| 参数名称  | 说明           | 类型                     |
-| --------- | -------------- | ------------------------ |
-| text      | 需要展示的文本 | `*`                      |
-| formatter | 格式化方法     | `Function(text):string`  |
-| colors    | 颜色           | `object<string,boolean>` |
+| 参数名称  | 说明           | 类型                    |
+| --------- | -------------- | ----------------------- |
+| text      | 需要展示的文本 | `*`                     |
+| formatter | 格式化方法     | `Function(text):string` |
+| colors    | 颜色           | `object<string, any>`    |
 
 ## 参数详解
 
