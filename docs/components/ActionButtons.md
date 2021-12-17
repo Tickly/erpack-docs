@@ -18,6 +18,5 @@
 | confirm | `string`           | -      | 确认提示，如果设置了该值，点击按钮会弹出一个确认框，点击确定之后才会触发 click 事件 |
 
 ## 示例
-
-<action-buttons-demo />
-<<< @/docs/.vuepress/components/action-buttons/demo.vue
+::: code-example action-buttons/demo.vue
+:::

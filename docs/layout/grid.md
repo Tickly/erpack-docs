@@ -16,6 +16,5 @@
 | column | `String` `Number` | 用来设置`grid-column`的值。如果传`Number`则表示跨越 N 列。如果传`String`则是原样输出。 |
 
 ## 示例
-
-<grid-demo-1 />
-<<< @/docs/.vuepress/components/grid/demo-1.vue
+::: code-example grid/demo-1.vue
+:::

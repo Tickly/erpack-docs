@@ -24,11 +24,9 @@
 
 ## 对比原组件
 
-<descriptions-basic />
-
-<<< @/docs/.vuepress/components/descriptions/basic.vue
+::: code-example descriptions/basic.vue
+:::
 
 ## 配合模型
-
-<descriptions-with-model />
-<<< @/docs/.vuepress/components/descriptions/with-model.vue
+::: code-example descriptions/with-model.vue
+:::

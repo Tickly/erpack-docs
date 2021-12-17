@@ -74,6 +74,6 @@ module.exports = {
     ]
   },
   plugins: [
-    require('./plugins/my-plugin')
+    "code-example"
   ]
 }

@@ -3,7 +3,7 @@
 ## Demo
 
 下面是一些示例
-::: doc text/demo.vue
+::: code-example text/demo.vue
 :::
 
 ## Props
