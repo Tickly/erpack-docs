@@ -21,12 +21,20 @@ const resolveFile = filePath => {
   return `<pre v-pre class="language-vue"><code>${html}</code></pre>`
 }
 
+/**
+ * @param {String} filePath 
+ */
+const resolveComponentName = filePath => filePath.slice(0, -4).replace(/\//g, '-')
+
 
 module.exports = (opts) => {
   const type = 'doc'
 
   return {
     name: 'my-xxx-plugin',
+    enhanceAppFiles: [
+      path.resolve(__dirname, 'enhanceAppFile.js')
+    ],
     plugins: [
       [
         'container',
@@ -36,15 +44,13 @@ module.exports = (opts) => {
             const token = tokens[index]
 
             const componentPath = token.info.trim().slice(type.length).trim()
-            console.log([componentPath])
+            // 文件内容
             const code = componentPath ? resolveFile(componentPath) : ''
-
+            // 组件名称
+            const componentName = resolveComponentName(componentPath)
             if (token.nesting === 1) {
-              return `<div class="abc">
-              <div class=""></div>
-${code}
-
-              `
+              return `<div>
+                      <Example component="${componentName}">${code}</Example>`
             } else {
               return '</div>'
             }

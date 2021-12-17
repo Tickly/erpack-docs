@@ -1,13 +1,10 @@
 # Text 文本组件
 
 ## Demo
-::: doc text/demo.vue
-:::
 
 下面是一些示例
-
-<text-demo />
-<<< @/docs/.vuepress/components/text/demo.vue
+::: doc text/demo.vue
+:::
 
 ## Props
 
@@ -15,7 +12,7 @@
 | --------- | -------------- | ----------------------- |
 | text      | 需要展示的文本 | `*`                     |
 | formatter | 格式化方法     | `Function(text):string` |
-| colors    | 颜色           | `object<string, any>`    |
+| colors    | 颜色           | `object<string, any>`   |
 
 ## 参数详解
 
