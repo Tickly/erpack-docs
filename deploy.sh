@@ -13,6 +13,7 @@ cd docs/.vuepress/dist
 # echo 'www.example.com' > CNAME
 
 git init
+git branch -M main
 git add -A
 git commit -m 'deploy'
 
@@ -20,6 +21,6 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:Tickly/erpack-docs.git master:gh-pages
+git push -f git@github.com:Tickly/erpack-docs.git main:gh-pages
 
 cd -
