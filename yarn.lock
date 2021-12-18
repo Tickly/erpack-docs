@@ -8560,10 +8560,10 @@ vuepress-html-webpack-plugin@^3.2.0:
     toposort "^1.0.0"
     util.promisify "1.0.0"
 
-vuepress-plugin-code-example@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/vuepress-plugin-code-example/-/vuepress-plugin-code-example-1.0.0.tgz#3f4518383ededf31cbdc01c0585ddad99b69633f"
-  integrity sha512-GKqoLeqWXv3Qw9A60wV1qpT/rvmr8Q+fzq6ZRNEe2dZpyoz7pzg+WrcYtMVcEkSqEwbKO8p6RZS8gYFFUswfQw==
+vuepress-plugin-code-example@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/vuepress-plugin-code-example/-/vuepress-plugin-code-example-1.1.0.tgz#c5c97ad5974e10f3fe10eb0ba21fe5c9b4e5d0c8"
+  integrity sha512-P6tGfpakT/DU6HbLMbY4O1OmlJJXnktojqSP5xmvdcbR7LWNU2IR6oiHQrwyOYWCWJvPOGzCpFkjopROfdGqnA==
   dependencies:
     prismjs "^1.25.0"
 

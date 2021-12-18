@@ -1,6 +1,7 @@
 module.exports = {
   base: '/erpack-docs/',
   themeConfig: {
+    navbar: false,
     sidebar: [
       '/',
       {
@@ -70,10 +71,12 @@ module.exports = {
           '/style-guide/list-page',
         ]
       },
+      'vision',
       'FAQ',
     ]
   },
   plugins: [
     "code-example"
+    // require('../../../vuepress-plugin-code-example')
   ]
 }

@@ -14,11 +14,12 @@ import antd from 'ant-design-vue';
 import 'ant-design-vue/dist/antd.css';
 import erpack from 'erpack';
 import 'erpack/dist/erpack.css';
-
+// 先装ant-design-vue
 Vue.use(antd);
+// 再装erpack
 Vue.use(erpack);
 ```
 
 ---
 
-文档持续完善中...
+功能持续开发中...
